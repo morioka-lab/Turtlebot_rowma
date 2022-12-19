@@ -24,7 +24,7 @@ cd rowma_ros
 pip install -r requirements.txt
 catkin_make
 ```
-### Zoom SDK
+### Zoom SDK（特に作業は必要ないかな）
 ロボットの映像をスマホアプリに送信する手段として[Zoom Video SDK](https://marketplace.zoom.us/docs/sdk/video/introduction/)を使用しています。  
 　ロボット側：[Web用のSDK](https://marketplace.zoom.us/docs/sdk/video/web/)  
 　スマホアプリ側：[Android用のSDK](https://marketplace.zoom.us/docs/sdk/video/android/)  
@@ -35,7 +35,7 @@ catkin_make
 タートルボットのPCで以下のコマンドたちを実行します。
 
 ### ROSのコマンドたち
-Rowma（UUIDを”turtlebot”に設定）
+Rowma（UUIDを”turtlebot”に設定）※roscoreと別ターミナルで
 ```sh
 roscore
 UUID=turtlebot rosrun rowma_ros rowma
