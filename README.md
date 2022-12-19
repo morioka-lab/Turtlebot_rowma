@@ -28,7 +28,8 @@ catkin_make
 ロボットの映像をスマホアプリに送信する手段として[Zoom Video SDK](https://marketplace.zoom.us/docs/sdk/video/introduction/)を使用しています。  
 　ロボット側：[Web用のSDK](https://marketplace.zoom.us/docs/sdk/video/web/)  
  　ロボット側のSDKについては、Zoomが公開しているサンプルアプリを使用しています。　インストールは[こちら](https://github.com/zoom/videosdk-web-sample)
-   Webpackのファイルを少し変更しています。[Webpack変更後]（）
+   Webpackのファイル（sample-app-videosdk/purejs-demo/webpack.config.dev.js）を少し変更しています。  
+   [Webpack変更後]（https://github.com/morioka-lab/Turtlebot_rowma/blob/main/webpack.config.dev.js）
 　スマホアプリ側：[Android用のSDK](https://marketplace.zoom.us/docs/sdk/video/android/)  
 
 更に、Video SDKを使用するために必要なJWTトークンというものを生成しています。JWTトークンはTurtlebot用のPCで生成し、Rowmaを仲介して、スマホアプリに送信しています。  
