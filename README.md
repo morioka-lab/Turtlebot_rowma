@@ -4,8 +4,8 @@
 ### ROS
 まずは、ロボットを操作するために[ROS](http://wiki.ros.org/ja)をインストールする必要があります。
 
-ついでに森岡研究室のロボットを動かせるようにするといいかも。※Githubアカウントの作成とmorioka_labへの参加が必要
-[MoriokaLab](https://github.com/morioka-lab/ros-instruction) 
+ついでに[森岡研究室のロボットを動かせるよう](https://github.com/morioka-lab/ros-instruction) にするといいかも。※Githubアカウントの作成とmorioka_labへの参加が必要
+
 
 ### Turtlebot
 このシステムでは、turtlebot2を用いていますので、これについても対象のROSパッケージをインストールする必要があります。
