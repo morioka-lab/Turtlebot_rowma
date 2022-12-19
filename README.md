@@ -32,12 +32,14 @@ catkin_make
    [Webpack変更後]（https://github.com/morioka-lab/Turtlebot_rowma/blob/main/webpack.config.dev.js）  
 　スマホアプリ側：[Android用のSDK](https://marketplace.zoom.us/docs/sdk/video/android/)  
 
-### スマホアプリ
-参考程度にスマホアプリのコードを残しておきます。使うだけだったらGooglePlayStoreからインストールで十分かもです。  
-[スマホアプリ](https://github.com/TakasanLab/RowmaRobotApp)
+
 
 更に、Video SDKを使用するために必要なJWTトークンというものを生成しています。JWTトークンはTurtlebot用のPCで生成し、Rowmaを仲介して、スマホアプリに送信しています。  
 [JWTトークン生成＆送信プログラム](https://github.com/morioka-lab/Turtlebot_rowma/blob/main/jwt.js)
+
+### スマホアプリ
+参考程度にスマホアプリのコードを残しておきます。使うだけだったらGooglePlayStoreからインストールで十分かもです。  
+[スマホアプリ](https://github.com/TakasanLab/RowmaRobotApp)
 
 ## システムの実行
 タートルボットのPCで以下のコマンドたちを実行します。
