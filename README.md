@@ -1,4 +1,4 @@
-# Turtlebot_rowma　タートルボットで森岡研究室内を巡回するシステム
+# タートルボットで森岡研究室内を巡回するシステム
 ## まずは、セットアップ
 
 ### ROS
@@ -35,11 +35,30 @@ catkin_make
 タートルボットのPCで以下のコマンドたちを実行します。
 
 ### ROSのコマンドたち
-roscore起動
+Rowma（UUIDを”turtlebot”に設定）
 ```sh
 roscore
-```
-Rowma起動（UUIDを”turtlebot”に設定）
-```sh
 UUID=turtlebot rosrun rowma_ros rowma
 ```
+タートルボットの制御用ROSノード
+```sh
+roslaunch kobuki_node minimal.launch
+```
+スマホからの速度指令値　→　Turtlebot用速度指令値　変換用ROSノード
+```sh
+rosrun chatter listener_cmd_vel.py
+```
+### Zoomのコマンドたち
+JWTトークン自動生成＆スマホアプリへの送信
+```sh
+cd <jwt.jsのあるディレクトリ>
+node jwt.js
+```
+Zoom Web SDKの実行（警告みたいなものがブラウザに表示されますが、”詳細設定”というところを開くとページを閲覧できます。）
+```sh
+cd sample-app-videosdk/purejs-demo/
+npm start
+```
+以上！！！！！！！！！！！
+
+あとは、スマホアプリを操作すると、ロボットの前方の映像を見ながら十字キーでタートルボットを遠隔操作したり、タートルボットを充電スタンドへと自動ドッキングすることができます。
