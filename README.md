@@ -9,11 +9,14 @@
 
 ### Turtlebot
 このシステムでは、turtlebot2を用いていますので、これについても対象のROSパッケージをインストールする必要があります。
+
 [こちらのサイト](https://qiita.com/s_makinaga/items/0547ae13f8f4687538e4)を参考にROSパッケージをインストールしてください。
+
 このサイトでは、ROSのセットアップもしていますが、そこはすでに終わっているものとして、４のTurtlebot用のパッケージというところから始めてください。
 
 ### Rowma
 ロボットとのスマホアプリをつなぐシステムとして[Rowma](https://github.com/rowma)（Robot Web Manager）というものを使います。
+  
 Rowmaも必要なROSパッケージがあるので、インストールします。
 
 ```sh
