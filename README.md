@@ -27,6 +27,7 @@ catkin_make
 ### Zoom SDK
 ロボットの映像をスマホアプリに送信する手段として[Zoom Video SDK](https://marketplace.zoom.us/docs/sdk/video/introduction/)を使用しています。  
 　ロボット側：[Web用のSDK](https://marketplace.zoom.us/docs/sdk/video/web/)  
+ 　ロボット側のSDKについては、Zoomが公開しているサンプルアプリを使用しています。　インストールは[こちら](https://github.com/zoom/videosdk-web-sample)
 　スマホアプリ側：[Android用のSDK](https://marketplace.zoom.us/docs/sdk/video/android/)  
 
 更に、Video SDKを使用するために必要なJWTトークンというものを生成しています。JWTトークンはTurtlebot用のPCで生成し、Rowmaを仲介して、スマホアプリに送信しています。
